@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+
+  <script>
+    function func1() {
+
+      var Skv = Number(document.getElementById("Skv_znach").value);
+      var Sokr = Number(document.getElementById("Skr_znach").value);
+      var a = Math.sqrt(Skv);
+      var diam = 2 * Math.sqrt(Sokr / 3.14);
+      if (Skv != Sokr) {
+        if (diam < a) {
+          document.getElementById("kont_a").innerHTML = "vlezet"
+        } else {
+          document.getElementById("kont_a").innerHTML = "ne vlezet"
+        }
+      } else {
+        document.getElementById("kont_a").innerHTML = "ploshadi ravny"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Задача 1.25</h1> Площадь квадрата S=
+  <input type="text" value="0" id="Skv_znach">
+  <br> Площадь круга S=
+  <input type="text" value="0" id="Skr_znach">
+  <br>
+  <button onclick="func1()">4.16</button>
+  <div id="kont_a"></div>
+</body>
+
+</html>
