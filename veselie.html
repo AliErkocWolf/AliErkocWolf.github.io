@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+      BODY {
+      align-items: center;
+      justify-content: center;
+      background: white;
+      font-family: Georgia;
+    }
+    
+    H1 {
+      font-size: 30px;
+      font-weight: normal;
+      cursor: pointer;
+      text-shadow: 0 0 15px #999;
+      color: transparent;
+      transition: all .5s;
+    }
+    
+    H1:hover {
+      text-shadow: 0 0 0px #333;
+      cursor: pointer;
+    }
+    
+    {
+  </style>
+  <script>
+    function er1() {
+      x = Number(document.getElementById("x_znach").value);
+      y = Number(document.getElementById("y_znach").value);
+      var a = Math.sqrt(y / 3, 14)
+      var b = Math.sqrt(x)
+      var c = 2 * Math.sqrt(x)
+      if (a < c) {
+        document.getElementById("otvet").innerHTML = "vlezet";
+      } else {
+        document.getElementById("otvet").innerHTML = " ne vlezet";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  Площадь квадрата x=
+  <input type="text" value="0" id="x_znach"> Площадь круга y=
+  <input type="text" value="0" id="y_znach">
+  <button onclick="func1()">4.16</button>
+  <div id="kont_a"></div>
+  
+</body>
+
+</html>
